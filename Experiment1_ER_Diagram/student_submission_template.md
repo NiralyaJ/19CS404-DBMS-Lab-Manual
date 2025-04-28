@@ -1,6 +1,6 @@
-# ER Diagram Submission 
-# Name - Joyce Priscilla R 
-# Register No - 212223060107
+## ER Diagram Submission 
+## Name - Joyce Priscilla R 
+## Register No - 212223060107
 
 ## Scenario Chosen:
  Hospital Management System 
