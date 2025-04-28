@@ -1,7 +1,8 @@
-# ER Diagram Submission - Student Name
+# ER Diagram Submission - Joyce Priscilla R 
+# Register No - 212223060107
 
 ## Scenario Chosen:
-University / Hospital (choose one)
+ Hospital
 
 ## ER Diagram:
 ![ER Diagram](er_diagram.png)
