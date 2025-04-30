@@ -9,7 +9,6 @@ StockQuantity as INTEGER should be non-negative.
 
 ![Screenshot 2025-04-30 094406](https://github.com/user-attachments/assets/4e2cc8a7-2cfb-4668-989e-3c04dfe9cad6)
 
-**QUERY**
 ---sql
 CREATE TABLE Products(
 ProductID integer primary key,
