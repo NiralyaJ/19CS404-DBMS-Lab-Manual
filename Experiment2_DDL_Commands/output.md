@@ -37,8 +37,8 @@ Sample table: customer
 
 **QUERY**
 
-ALTER TABLE customer
-ADD COLUMN discount DECIMAL(5,2)
+---ALTER TABLE customer
+---ADD COLUMN discount DECIMAL(5,2)
 
 **Output:**
 
