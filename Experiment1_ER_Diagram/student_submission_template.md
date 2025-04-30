@@ -3,7 +3,7 @@
 ## Register No - 212223060107
 
 ## Scenario Chosen:
- Hospital Management System 
+ Hospital Management System - ER Diagram
 
 ## ER Diagram:
 ![Screenshot 2025-04-30 060300](https://github.com/user-attachments/assets/796865d6-081d-4f4b-9139-1ebfeb7712c0)
