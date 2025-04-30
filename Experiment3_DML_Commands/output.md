@@ -2,18 +2,7 @@
 --
 Write a SQL statement to Change the category to 'Household' where product name contains 'Detergent' in the products table.
 
-Products Table 
 
-name          type       
-----------    ---------- 
-product_id     INT PRIMARY KEY        
-product_name   VARCHAR(10) 
-category       VARCHAR(50) 
-cost_price     DECIMAL(10) 
-sell_price     DECIMAL(10) 
-reorder_lvl    INT        
-quantity       INT        
-supplier_id    INT 
 
 ```sql
 UPDATE Products
@@ -28,13 +17,7 @@ where product_name LIKE '%Detergent%';
 ---
 Write a SQL statement to double the availability of the product with product_id 1.
 
-products table
 
----------------
-product_id
-product_name
-category_id
-availability
 
 ```sql
 UPDATE products
@@ -49,10 +32,14 @@ where product_id=1;
 
 **Question 3**
 ---
--- Paste Question 3 here
+Increase the reorder level by 30% for products from 'Food' category having quantity in stock less than 50% of existing reorder level in the products table.
 
 ```sql
--- Paste your SQL code below for Question 3
+UPDATE products
+set reorder_lvl=reorder_lvl*1.30
+where category='Food'
+and quantity<(reorder_lvl*0.50);
+
 ```
 
 **Output:**
@@ -61,10 +48,13 @@ where product_id=1;
 
 **Question 4**
 ---
--- Paste Question 4 here
+Write a SQL statement to Update the address to '58 Lakeview, Magnolia' where supplier ID is 5 in the suppliers table.
 
 ```sql
--- Paste your SQL code below for Question 4
+update Suppliers
+set address='58 Lakeview, Magnolia'
+where supplier_id='5';
+
 ```
 
 **Output:**
@@ -73,10 +63,12 @@ where product_id=1;
 
 **Question 5**
 ---
--- Paste Question 5 here
+Write a SQL query to Delete customers from 'customer' table where 'CUST_NAME' contains the substring 'Holmes'.
 
 ```sql
--- Paste your SQL code below for Question 5
+delete from Customer
+where CUST_NAME LIKE '%HOLMES%';
+
 ```
 
 **Output:**
@@ -85,10 +77,12 @@ where product_id=1;
 
 **Question 6**
 ---
--- Paste Question 6 here
+Write a SQL query to Delete All Doctors with a NULL Last Name
 
 ```sql
--- Paste your SQL code below for Question 6
+delete from Doctors
+where last_name IS NULL;
+
 ```
 
 **Output:**
@@ -97,10 +91,12 @@ where product_id=1;
 
 **Question 7**
 ---
--- Paste Question 7 here
+Write a SQL query to Delete a Specific Surgery whose ID is 3
 
 ```sql
--- Paste your SQL code below for Question 7
+DELETE FROM Surgeries
+where surgery_id='3';
+
 ```
 
 **Output:**
@@ -109,10 +105,11 @@ where product_id=1;
 
 **Question 8**
 ---
--- Paste Question 8 here
+Write a SQL query to Delete customers from 'customer' table where 'GRADE' is exactly 2.
 
 ```sql
--- Paste your SQL code below for Question 8
+DELETE FROM Customer
+WHERE GRADE=2;
 ```
 
 **Output:**
@@ -121,10 +118,12 @@ where product_id=1;
 
 **Question 9**
 ---
--- Paste Question 9 here
+Write a SQL query to Delete customers with 'GRADE' 3 or 'AGENT_CODE' 'A008' whose 'OUTSTANDING_AMT' is less than 5000
 
 ```sql
--- Paste your SQL code below for Question 9
+DELETE FROM Customer
+WHERE (GRADE= 3 OR AGENT_CODE ='A008')
+AND OUTSTANDING_AMT<5000;
 ```
 
 **Output:**
@@ -133,10 +132,11 @@ where product_id=1;
 
 **Question 10**
 ---
--- Paste Question 10 here
+Write a SQL query to Select all patients whose name starts with A.
 
 ```sql
--- Paste your SQL code below for Question 10
+SELECT * FROM Patients
+where first_name LIKE 'A%';
 ```
 
 **Output:**
