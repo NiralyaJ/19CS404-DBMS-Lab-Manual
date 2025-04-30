@@ -4,6 +4,8 @@ Write a SQL statement to Change the category to 'Household' where product name c
 
 ![Screenshot 2025-04-30 202624](https://github.com/user-attachments/assets/72da86a8-c33b-4b39-93a4-ee31818be15c)
 
+**Query:**
+
 ```sql
 UPDATE Products
 set category='Household'
@@ -21,6 +23,8 @@ Write a SQL statement to double the availability of the product with product_id 
 
 ![Screenshot 2025-04-30 202742](https://github.com/user-attachments/assets/8e28805f-7112-42ec-9223-a6a049a07736)
 
+**Query:**
+
 ```sql
 UPDATE products
 set availability=availability*2
@@ -37,6 +41,8 @@ where product_id=1;
 Increase the reorder level by 30% for products from 'Food' category having quantity in stock less than 50% of existing reorder level in the products table.
 
 ![Screenshot 2025-04-30 202753](https://github.com/user-attachments/assets/2b7bba17-31e7-47ce-aa18-95bf02be09da)
+
+**Query:**
 
 ```sql
 UPDATE products
@@ -56,6 +62,8 @@ Write a SQL statement to Update the address to '58 Lakeview, Magnolia' where sup
 
 ![Screenshot 2025-04-30 202933](https://github.com/user-attachments/assets/9b8b79fc-ef52-4729-b5c6-91a6acf121c1)
 
+**Query:**
+
 ```sql
 update Suppliers
 set address='58 Lakeview, Magnolia'
@@ -74,6 +82,8 @@ Write a SQL query to Delete customers from 'customer' table where 'CUST_NAME' co
 
 ![Screenshot 2025-04-30 203034](https://github.com/user-attachments/assets/66a441f7-1273-4d3f-acab-320d0ab6ee73)
 
+**Query:**
+
 ```sql
 delete from Customer
 where CUST_NAME LIKE '%HOLMES%';
@@ -90,6 +100,8 @@ where CUST_NAME LIKE '%HOLMES%';
 Write a SQL query to Delete All Doctors with a NULL Last Name
 
 ![Screenshot 2025-04-30 203135](https://github.com/user-attachments/assets/7bdcf218-18fa-4d9c-96af-30f14ee4e564)
+
+**Query:**
 
 ```sql
 delete from Doctors
@@ -108,6 +120,8 @@ Write a SQL query to Delete a Specific Surgery whose ID is 3
 
 ![Screenshot 2025-04-30 203210](https://github.com/user-attachments/assets/7bd3bdaf-ea92-43d2-b48e-68a2d21df465)
 
+**Query:**
+
 ```sql
 DELETE FROM Surgeries
 where surgery_id='3';
@@ -125,6 +139,8 @@ Write a SQL query to Delete customers from 'customer' table where 'GRADE' is exa
 
 ![Screenshot 2025-04-30 203239](https://github.com/user-attachments/assets/917e6686-0a63-4e6e-a164-053935d51494)
 
+**Query:**
+
 ```sql
 DELETE FROM Customer
 WHERE GRADE=2;
@@ -140,6 +156,8 @@ WHERE GRADE=2;
 Write a SQL query to Delete customers with 'GRADE' 3 or 'AGENT_CODE' 'A008' whose 'OUTSTANDING_AMT' is less than 5000
 
 ![Screenshot 2025-04-30 203251](https://github.com/user-attachments/assets/8570bc82-b9bb-4b7b-bc8b-254ded953ca3)
+
+**Query:**
 
 ```sql
 DELETE FROM Customer
@@ -158,6 +176,8 @@ Write a SQL query to Select all patients whose name starts with A.
 
 ![Screenshot 2025-04-30 203411](https://github.com/user-attachments/assets/0ca8a10b-923a-4653-83a6-d703004079be)
 
+**Query:**
+
 ```sql
 SELECT * FROM Patients
 where first_name LIKE 'A%';
@@ -166,4 +186,7 @@ where first_name LIKE 'A%';
 **Output:**
 
 ![Screenshot 2025-04-30 203411](https://github.com/user-attachments/assets/5a26674c-5e1b-4170-b85a-3104a3a7bfdd)
+
+## RESULT
+Thus, the SQL queries to implement DML commands have been executed successfully.
 
