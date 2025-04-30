@@ -13,33 +13,33 @@
 1. PATIENT
    
 Attributes:
--PATIENT_ID (Primary Key)
--NAME
--GENDER
--EMAIL_ID
--PHONE_NO
+PATIENT_ID (Primary Key),
+NAME,
+GENDER,
+EMAIL_ID,
+PHONE_NO
 
 2. APPOINTMENT
 
 Attributes:
--APPOINT_ID (Primary Key)
--TIMING
+APPOINT_ID (Primary Key),
+TIMING
 
 3. DOCTOR
    
 Attributes:
--DOCTOR_ID (Primary Key)
--NAME
--EMAIL_ID
--EXPERIENCE
--SALARY
+DOCTOR_ID (Primary Key),
+NAME,
+EMAIL_ID,
+EXPERIENCE,
+SALARY
 
 4. DEPARTMENT
 
 Attributes:
--DEPT_ID (Primary Key)
--NAME
--LOCATION
+DEPT_ID (Primary Key),
+NAME,
+LOCATION
 
 ## Relationships and Constraints:
 
