@@ -6,6 +6,9 @@ ProductName as TEXT should be unique and not NULL.
 Price as REAL should be greater than 0.
 StockQuantity as INTEGER should be non-negative.
 
+![Screenshot 2025-04-30 220124](https://github.com/user-attachments/assets/690a314c-8a58-4971-9513-6ba79f75978b)
+
+
 **Query:**
 
 ```sql
@@ -21,11 +24,15 @@ StockQuantity integer check(StockQuantity>0)
 
 **Output:**
 
-![Output1](output.png)
+![Screenshot 2025-04-30 220510](https://github.com/user-attachments/assets/55246a78-9c52-4ed7-a7b7-ec1addcbf07a)
+
 
 **Question 2**
 ---
 Write a SQL query to Add a new column named "discount" with the data type DECIMAL(5,2) to the "customer" table.
+
+![Screenshot 2025-04-30 220522](https://github.com/user-attachments/assets/68479e39-c908-472b-aa8a-f0d7d801e508)
+
 
 **Query:**
 
@@ -38,7 +45,8 @@ ADD COLUMN discount DECIMAL(5,2)
 
 **Output:**
 
-![Output2](output.png)
+![Screenshot 2025-04-30 220535](https://github.com/user-attachments/assets/bc416f42-3a2c-47fb-8de5-c21ce6895407)
+
 
 **Question 3**
 ---
@@ -48,6 +56,9 @@ first_name as TEXT and not NULL.
 last_name as TEXT and not NULL.
 email as TEXT.
 phone as TEXT and not NULL with a check constraint to ensure the length of phone is at least 10 characters.
+
+![Screenshot 2025-04-30 220547](https://github.com/user-attachments/assets/c0b8305e-734c-42b6-8d17-ab724e65f2db)
+
 
 **Query:**
 
@@ -64,7 +75,8 @@ phone as TEXT and not NULL with a check constraint to ensure the length of phone
 
 **Output:**
 
-![Output3](output.png)
+![Screenshot 2025-04-30 220601](https://github.com/user-attachments/assets/6540f06d-27f6-484a-a8b2-3ce46f098abd)
+
 
 **Question 4**
 ---
@@ -73,6 +85,9 @@ AssignmentID as INTEGER should be the primary key.
 EmployeeID as INTEGER should be a foreign key referencing Employees(EmployeeID).
 ProjectID as INTEGER should be a foreign key referencing Projects(ProjectID).
 AssignmentDate as DATE should be NOT NULL.
+
+![Screenshot 2025-04-30 220612](https://github.com/user-attachments/assets/c4b7db4b-c2f7-4f52-8f9e-b8fa3791e430)
+
 
 **Query:**
 
@@ -90,7 +105,8 @@ foreign key(ProjectID) REFERENCES Projects(projectID));
 
 **Output:**
 
-![Output4](output.png)
+![Screenshot 2025-04-30 220620](https://github.com/user-attachments/assets/85332812-a85b-4c27-bc01-53dbb8b51363)
+
 
 **Question 5**
 ---
@@ -99,6 +115,8 @@ Create a table named Events with the following columns:
 EventID as INTEGER
 EventName as TEXT
 EventDate as DATE
+
+![Screenshot 2025-04-30 220626](https://github.com/user-attachments/assets/3c88bf66-a401-4afd-bd8d-df974e06bc75)
 
 **Query:**
 
@@ -114,7 +132,8 @@ EventDate DATE
 
 **Output:**
 
-![Output5](output.png)
+![Screenshot 2025-04-30 220634](https://github.com/user-attachments/assets/2bf9f615-be51-4152-92fd-3f4dc647fc1d)
+
 
 **Question 6**
 ---
