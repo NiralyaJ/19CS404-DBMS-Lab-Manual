@@ -11,11 +11,11 @@ StockQuantity as INTEGER should be non-negative.
 
 **QUERY**
 
-CREATE TABLE Products(
-ProductID integer primary key,
-ProductName varchar(100) unique not null,
-Price Real check(price>0),
-StockQuantity integer check(StockQuantity>0)
+CREATE TABLE Products(,
+ProductID integer primary key,,
+ProductName varchar(100) unique not null,,
+Price Real check(price>0),,
+StockQuantity integer check(StockQuantity>0),
 );
 
 **Output:**
