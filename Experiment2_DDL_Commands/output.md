@@ -1,4 +1,3 @@
-![Screenshot 2025-04-30 094939](https://github.com/user-attachments/assets/9924d9fe-ae87-4c10-8421-e07c3c69f638)![Screenshot 2025-04-30 094553](https://github.com/user-attachments/assets/780e33cc-e636-4a67-9781-a534a8ebf916)
 
 **Question 1**
 
@@ -9,6 +8,8 @@ Price as REAL should be greater than 0.
 StockQuantity as INTEGER should be non-negative.
 
 ![Screenshot 2025-04-30 094406](https://github.com/user-attachments/assets/4e2cc8a7-2cfb-4668-989e-3c04dfe9cad6)
+
+**QUERY**
 
 CREATE TABLE Products(
 ProductID integer primary key,
@@ -34,6 +35,8 @@ Sample table: customer
         
  ![Screenshot 2025-04-30 094519](https://github.com/user-attachments/assets/4bb0831b-ef40-4ead-ac9c-d905c42ed6a8)
 
+**QUERY**
+
 ALTER TABLE customer
 ADD COLUMN discount DECIMAL(5,2)
 
@@ -51,6 +54,8 @@ Create a new table named contacts with the following specifications:
 5.phone as TEXT and not NULL with a check constraint to ensure the length of phone is at least 10 characters.
 
 ![Screenshot 2025-04-30 094553](https://github.com/user-attachments/assets/959f4a4d-e5af-420e-bedc-3474bb5fde41)
+
+**QUERY**
 
 CREATE TABLE contacts(
 contact_id integer primary key,
@@ -71,6 +76,8 @@ ProjectID as INTEGER should be a foreign key referencing Projects(ProjectID).
 AssignmentDate as DATE should be NOT NULL.
 
 ![Screenshot 2025-04-30 094650](https://github.com/user-attachments/assets/f70188b2-c8c8-4f5f-8582-0fd92df50cca)
+
+**QUERY**
 
 CREATE TABLE ProjectAssignments(
 AssignmentID integer primary key,
@@ -93,6 +100,8 @@ EventDate as DATE
 
 ![Screenshot 2025-04-30 094721](https://github.com/user-attachments/assets/86acd69d-76b1-4454-9160-9952e77cca28)
 
+**QUERY**
+
 create table Events(
 EventID INTEGER,
 EventName TEXT,
@@ -102,7 +111,6 @@ EventDate DATE
 **Output:**
 
 ![Screenshot 2025-04-30 094737](https://github.com/user-attachments/assets/3886ccad-0dc6-49d9-94a8-eabe063ea55e)
-
 
 **Question 6**
 
@@ -116,6 +124,8 @@ Create a new table named item with the following specifications and constraints:
 7.item_desc and rate should not accept NULL.
 
 ![Screenshot 2025-04-30 094751](https://github.com/user-attachments/assets/58f39a50-3612-4299-8939-b0225b0e158c)
+
+**QUERY**
 
 CREATE TABLE item(
 item_id text primary key,
@@ -137,6 +147,8 @@ on delete cascade
 Write a SQL Query  to add attribute ISBN as varchar(30) and domain_dept as varchar(30) in the table 'books'
 
  ![Screenshot 2025-04-30 094820](https://github.com/user-attachments/assets/83b3a4ea-5508-4de2-9afe-47aa888153c0)
+
+**QUERY**
 
 ALTER TABLE books
 ADD ISBN varchar(30);
@@ -160,6 +172,8 @@ Note: The Department and Salary columns will use their default values.
 
 ![Screenshot 2025-04-30 094847](https://github.com/user-attachments/assets/5d619261-448e-48c1-b591-2721df610a3a)
 
+**QUERY**
+
 INSERT INTO Employee (EmployeeID,Name,Position)
 VALUES(4, 'Emily White', 'Analyst');
 
@@ -174,6 +188,8 @@ Insert all products from Discontinued_products into Products.
 Table attributes are ProductID, ProductName, Price, Stock
 
 ![Screenshot 2025-04-30 094911](https://github.com/user-attachments/assets/16518ded-1c0a-4a0c-a832-88a97b158c05)
+
+**QUERY**
 
 INSERT INTO Products(ProductID,ProductName,Price,Stock)
 SELECT ProductID, ProductName, Price, Stock FROM Discontinued_products;
@@ -193,6 +209,8 @@ ProductID   Name              Category    Price       Stock
 108         Wireless Earbuds  Accessories              100
 
  ![Screenshot 2025-04-30 094939](https://github.com/user-attachments/assets/0ca0b4a0-75fd-4eef-b74b-50eeb8e1338c)
+
+**QUERY**
 
 INSERT INTO Products(ProductID, Name, Category, Price,Stock)
 VALUES('106','Fitness Tracker','Wearables',NULL,NULL);
