@@ -1,9 +1,20 @@
 **Question 1**
 --
--- Paste Question 1 here
+Create a table named Products with the following constraints:
+ProductID as INTEGER should be the primary key.
+ProductName as TEXT should be unique and not NULL.
+Price as REAL should be greater than 0.
+StockQuantity as INTEGER should be non-negative.
 
 ```sql
--- Paste your SQL code below for Question 1
+
+CREATE TABLE Products(
+ProductID integer primary key,
+ProductName varchar(100) unique not null,
+Price Real check(price>0),
+StockQuantity integer check(StockQuantity>0)
+);
+
 ```
 
 **Output:**
@@ -12,10 +23,21 @@
 
 **Question 2**
 ---
--- Paste Question 2 here
+Write a SQL query to Add a new column named "discount" with the data type DECIMAL(5,2) to the "customer" table.
+
+Sample table: customer
+
+ customer_id |   cust_name    |    city    | grade | salesman_id 
+-------------+----------------+------------+-------+-------------
+        3002 | Nick Rimando   | New York   |   100 |        5001
+        3007 | Brad Davis     | New York   |   200 |        5001
+        3005 | Graham Zusi    | California |   200 |        5002
 
 ```sql
--- Paste your SQL code below for Question 2
+
+ALTER TABLE customer
+ADD COLUMN discount DECIMAL(5,2)
+
 ```
 
 **Output:**
