@@ -27,6 +27,7 @@ StockQuantity integer check(StockQuantity>0)
 ---
 Write a SQL query to Add a new column named "discount" with the data type DECIMAL(5,2) to the "customer" table.
 
+**Query:**
 
 ```sql
 
@@ -48,7 +49,7 @@ last_name as TEXT and not NULL.
 email as TEXT.
 phone as TEXT and not NULL with a check constraint to ensure the length of phone is at least 10 characters.
 
-
+**Query:**
 
 ```sql
 
@@ -73,7 +74,7 @@ EmployeeID as INTEGER should be a foreign key referencing Employees(EmployeeID).
 ProjectID as INTEGER should be a foreign key referencing Projects(ProjectID).
 AssignmentDate as DATE should be NOT NULL.
 
-
+**Query:**
 
 ```sql
 
@@ -99,7 +100,7 @@ EventID as INTEGER
 EventName as TEXT
 EventDate as DATE
 
-
+**Query:**
 
 ```sql
 
@@ -126,7 +127,7 @@ Create a new table named item with the following specifications and constraints:
 6.The foreign key should cascade updates and deletes.
 7.item_desc and rate should not accept NULL.
 
-
+**Query:**
 
 ```sql
 
@@ -150,7 +151,7 @@ on delete cascade
 ---
 Write a SQL Query  to add attribute ISBN as varchar(30) and domain_dept as varchar(30) in the table 'books'
 
-
+**Query:**
 
 ```sql
 
@@ -169,7 +170,7 @@ ADD domain_dept varchar(30);
 ---
 Insert the below data into the Employee table, allowing the Department and Salary columns to take their default values.
 
-
+**Query:**
 
 ```sql
 
@@ -188,7 +189,7 @@ Insert all products from Discontinued_products into Products.
 
 Table attributes are ProductID, ProductName, Price, Stock
 
-
+**Query:**
 
 ```sql
 
@@ -205,6 +206,7 @@ SELECT ProductID, ProductName, Price, Stock FROM Discontinued_products;
 ---
 In the Products table, insert a record where some fields are NULL, another record where all fields are filled without any NULL values, and a third record where some fields are filled, and others are left as NULL.
 
+**Query:**
 
 ```sql
 
