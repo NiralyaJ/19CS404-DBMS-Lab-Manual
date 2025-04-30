@@ -187,7 +187,8 @@ where first_name LIKE 'A%';
 
 ![Screenshot 2025-04-30 203411](https://github.com/user-attachments/assets/5a26674c-5e1b-4170-b85a-3104a3a7bfdd)
 
-**Module 2 Home Challenge - Grade**
+
+## Module 2 Home Challenge - Grade
 
 ![Screenshot 2025-04-30 205802](https://github.com/user-attachments/assets/00f8e58d-e1d0-4bf8-b616-954ee63f6eea)
 
