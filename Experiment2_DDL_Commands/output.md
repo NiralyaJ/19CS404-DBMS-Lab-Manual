@@ -9,13 +9,16 @@ StockQuantity as INTEGER should be non-negative.
 
 ![Screenshot 2025-04-30 094406](https://github.com/user-attachments/assets/4e2cc8a7-2cfb-4668-989e-3c04dfe9cad6)
 
+---
 ---sql
+
 CREATE TABLE Products(
 ProductID integer primary key,
 ProductName varchar(100) unique not null,
 Price Real check(price>0),
 StockQuantity integer check(StockQuantity>0)
 );
+
 ---
 **Output:**
 
