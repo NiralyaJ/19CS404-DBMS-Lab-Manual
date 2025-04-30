@@ -1,10 +1,19 @@
 **Question 1**
 --
--- Paste Question 1 here
+Write a SQL statement to double the availability of the product with product_id 1.
+
+products table
+
+---------------
+product_id
+product_name
+category_id
+availability
 
 ```sql
--- Paste your SQL code below for Question 1
-```
+UPDATE products
+set availability=availability*2
+where product_id=1;
 
 **Output:**
 
