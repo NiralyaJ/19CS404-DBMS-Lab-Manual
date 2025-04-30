@@ -6,6 +6,8 @@ ProductName as TEXT should be unique and not NULL.
 Price as REAL should be greater than 0.
 StockQuantity as INTEGER should be non-negative.
 
+**Query:**
+
 ```sql
 
 CREATE TABLE Products(
@@ -25,13 +27,6 @@ StockQuantity integer check(StockQuantity>0)
 ---
 Write a SQL query to Add a new column named "discount" with the data type DECIMAL(5,2) to the "customer" table.
 
-Sample table: customer
-
- customer_id |   cust_name    |    city    | grade | salesman_id 
--------------+----------------+------------+-------+-------------
-        3002 | Nick Rimando   | New York   |   100 |        5001
-        3007 | Brad Davis     | New York   |   200 |        5001
-        3005 | Graham Zusi    | California |   200 |        5002
 
 ```sql
 
@@ -46,10 +41,24 @@ ADD COLUMN discount DECIMAL(5,2)
 
 **Question 3**
 ---
--- Paste Question 3 here
+Create a new table named contacts with the following specifications:
+contact_id as INTEGER and primary key.
+first_name as TEXT and not NULL.
+last_name as TEXT and not NULL.
+email as TEXT.
+phone as TEXT and not NULL with a check constraint to ensure the length of phone is at least 10 characters.
+
+
 
 ```sql
--- Paste your SQL code below for Question 3
+
+Create a new table named contacts with the following specifications:
+contact_id as INTEGER and primary key.
+first_name as TEXT and not NULL.
+last_name as TEXT and not NULL.
+email as TEXT.
+phone as TEXT and not NULL with a check constraint to ensure the length of phone is at least 10 characters.
+
 ```
 
 **Output:**
@@ -58,10 +67,24 @@ ADD COLUMN discount DECIMAL(5,2)
 
 **Question 4**
 ---
--- Paste Question 4 here
+Create a table named ProjectAssignments with the following constraints:
+AssignmentID as INTEGER should be the primary key.
+EmployeeID as INTEGER should be a foreign key referencing Employees(EmployeeID).
+ProjectID as INTEGER should be a foreign key referencing Projects(ProjectID).
+AssignmentDate as DATE should be NOT NULL.
+
+
 
 ```sql
--- Paste your SQL code below for Question 4
+
+CREATE TABLE ProjectAssignments(
+AssignmentID integer primary key,
+EmployeeID integer,
+ProjectID integer,
+AssignmentDate date not null,
+foreign key(EmployeeID) REFERENCES Employees(EmployeeID),
+foreign key(ProjectID) REFERENCES Projects(projectID));
+
 ```
 
 **Output:**
@@ -70,10 +93,22 @@ ADD COLUMN discount DECIMAL(5,2)
 
 **Question 5**
 ---
--- Paste Question 5 here
+Create a table named Events with the following columns:
+
+EventID as INTEGER
+EventName as TEXT
+EventDate as DATE
+
+
 
 ```sql
--- Paste your SQL code below for Question 5
+
+create table Events(
+EventID INTEGER,
+EventName TEXT,
+EventDate DATE
+);
+
 ```
 
 **Output:**
@@ -82,10 +117,29 @@ ADD COLUMN discount DECIMAL(5,2)
 
 **Question 6**
 ---
--- Paste Question 6 here
+Create a new table named item with the following specifications and constraints:
+1.item_id as TEXT and as primary key.
+2.item_desc as TEXT.
+3.rate as INTEGER.
+4.icom_id as TEXT with a length of 4.
+5.icom_id is a foreign key referencing com_id in the company table.
+6.The foreign key should cascade updates and deletes.
+7.item_desc and rate should not accept NULL.
+
+
 
 ```sql
--- Paste your SQL code below for Question 6
+
+CREATE TABLE item(
+item_id text primary key,
+item_desc text,
+rate integer ,
+icom_id text check(length(icom_id=4)),
+foreign key(icom_id) references company(com_id)
+on update cascade
+on delete cascade
+);
+
 ```
 
 **Output:**
@@ -94,10 +148,17 @@ ADD COLUMN discount DECIMAL(5,2)
 
 **Question 7**
 ---
--- Paste Question 7 here
+Write a SQL Query  to add attribute ISBN as varchar(30) and domain_dept as varchar(30) in the table 'books'
+
+
 
 ```sql
--- Paste your SQL code below for Question 7
+
+ALTER TABLE books
+ADD ISBN varchar(30);
+ALTER TABLE books
+ADD domain_dept varchar(30);
+
 ```
 
 **Output:**
@@ -106,10 +167,15 @@ ADD COLUMN discount DECIMAL(5,2)
 
 **Question 8**
 ---
--- Paste Question 8 here
+Insert the below data into the Employee table, allowing the Department and Salary columns to take their default values.
+
+
 
 ```sql
--- Paste your SQL code below for Question 8
+
+INSERT INTO Employee (EmployeeID,Name,Position)
+VALUES(4, 'Emily White', 'Analyst');
+
 ```
 
 **Output:**
@@ -118,10 +184,17 @@ ADD COLUMN discount DECIMAL(5,2)
 
 **Question 9**
 ---
--- Paste Question 9 here
+Insert all products from Discontinued_products into Products.
+
+Table attributes are ProductID, ProductName, Price, Stock
+
+
 
 ```sql
--- Paste your SQL code below for Question 9
+
+INSERT INTO Products(ProductID,ProductName,Price,Stock)
+SELECT ProductID, ProductName, Price, Stock FROM Discontinued_products;
+
 ```
 
 **Output:**
@@ -130,10 +203,18 @@ ADD COLUMN discount DECIMAL(5,2)
 
 **Question 10**
 ---
--- Paste Question 10 here
+In the Products table, insert a record where some fields are NULL, another record where all fields are filled without any NULL values, and a third record where some fields are filled, and others are left as NULL.
+
 
 ```sql
--- Paste your SQL code below for Question 10
+
+INSERT INTO Products(ProductID, Name, Category, Price,Stock)
+VALUES('106','Fitness Tracker','Wearables',NULL,NULL);
+INSERT INTO Products(ProductID, Name, Category, Price,Stock)
+VALUES('107','Laptop','Electronic','999.99','50');
+INSERT INTO Products(ProductID, Name, Category, Price,Stock)
+VALUES('108','Wireless Earbud','Accessorie',NULL,'100');
+
 ```
 
 **Output:**
