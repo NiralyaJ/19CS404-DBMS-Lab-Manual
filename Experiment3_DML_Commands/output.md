@@ -1,5 +1,31 @@
 **Question 1**
 --
+Write a SQL statement to Change the category to 'Household' where product name contains 'Detergent' in the products table.
+
+Products Table 
+
+name          type       
+----------    ---------- 
+product_id     INT PRIMARY KEY        
+product_name   VARCHAR(10) 
+category       VARCHAR(50) 
+cost_price     DECIMAL(10) 
+sell_price     DECIMAL(10) 
+reorder_lvl    INT        
+quantity       INT        
+supplier_id    INT 
+
+```sql
+UPDATE Products
+set category='Household'
+where product_name LIKE '%Detergent%';
+
+**Output:**
+
+![Output1](output.png)
+
+**Question 2**
+---
 Write a SQL statement to double the availability of the product with product_id 1.
 
 products table
@@ -15,16 +41,6 @@ UPDATE products
 set availability=availability*2
 where product_id=1;
 
-**Output:**
-
-![Output1](output.png)
-
-**Question 2**
----
--- Paste Question 2 here
-
-```sql
--- Paste your SQL code below for Question 2
 ```
 
 **Output:**
