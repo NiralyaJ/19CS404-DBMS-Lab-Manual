@@ -9,13 +9,14 @@ UPDATE Products
 set category='Household'
 where product_name LIKE '%Detergent%';
 
+```
+
 **Output:**
 
 ![Screenshot 2025-04-30 202720](https://github.com/user-attachments/assets/6e85f95d-670b-4f40-95d8-0acb7938652c)
 
-
 **Question 2**
----
+--
 Write a SQL statement to double the availability of the product with product_id 1.
 
 ![Screenshot 2025-04-30 202742](https://github.com/user-attachments/assets/8e28805f-7112-42ec-9223-a6a049a07736)
