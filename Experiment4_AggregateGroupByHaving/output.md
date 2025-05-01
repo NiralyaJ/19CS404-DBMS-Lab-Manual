@@ -214,3 +214,8 @@ having SUM(salary)>5000;
 ![Screenshot 2025-05-01 140843](https://github.com/user-attachments/assets/bc97531c-85b8-4671-92a3-c1a8f24609a1)
 
 
+## RESULT
+Thus, the SQL queries to implement aggregate functions, GROUP BY, and HAVING clause have been executed successfully.
+
+
+
