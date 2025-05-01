@@ -257,7 +257,8 @@ VALUES('108','Wireless Earbud','Accessorie',NULL,'100');
 
 ## Module 1 Home Challenge - Grade
 
-![Screenshot 2025-05-01 131556](https://github.com/user-attachments/assets/c19dc65d-2028-4171-b900-1c77cbdfe275)
+
+![Screenshot 2025-05-01 141036](https://github.com/user-attachments/assets/8d4d2b6d-449b-4ba0-8af0-5821d704e92c)
 
 
 ## RESULT
