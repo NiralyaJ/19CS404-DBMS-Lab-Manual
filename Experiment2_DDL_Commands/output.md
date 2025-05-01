@@ -166,11 +166,14 @@ on delete cascade
 
 **Output:**
 
-![Output6](output.png)
+![Screenshot 2025-04-30 220650](https://github.com/user-attachments/assets/1ba266cc-41c6-41b7-ba3e-4b624cbc3c7a)
+
 
 **Question 7**
 ---
 Write a SQL Query  to add attribute ISBN as varchar(30) and domain_dept as varchar(30) in the table 'books'
+
+![Screenshot 2025-04-30 220713](https://github.com/user-attachments/assets/beb382f2-49fa-49eb-b89a-8205c364fba0)
 
 **Query:**
 
@@ -185,11 +188,14 @@ ADD domain_dept varchar(30);
 
 **Output:**
 
-![Output7](output.png)
+![Screenshot 2025-04-30 220721](https://github.com/user-attachments/assets/00ad40f1-7cb6-4f28-b5a2-ae3b84c0d667)
+
 
 **Question 8**
 ---
 Insert the below data into the Employee table, allowing the Department and Salary columns to take their default values.
+
+![Screenshot 2025-04-30 220729](https://github.com/user-attachments/assets/fc4edd58-178e-4613-991b-fe1635f99971)
 
 **Query:**
 
@@ -202,13 +208,16 @@ VALUES(4, 'Emily White', 'Analyst');
 
 **Output:**
 
-![Output8](output.png)
+![Screenshot 2025-04-30 220736](https://github.com/user-attachments/assets/7c12ed3a-f7ba-494e-8fcb-46e9451fd42b)
+
 
 **Question 9**
 ---
 Insert all products from Discontinued_products into Products.
 
 Table attributes are ProductID, ProductName, Price, Stock
+
+![Screenshot 2025-04-30 220742](https://github.com/user-attachments/assets/b047fd01-a44f-4951-a231-44d6093863a7)
 
 **Query:**
 
@@ -221,11 +230,13 @@ SELECT ProductID, ProductName, Price, Stock FROM Discontinued_products;
 
 **Output:**
 
-![Output9](output.png)
+![Screenshot 2025-04-30 220749](https://github.com/user-attachments/assets/71d585fe-2b76-43d8-8e50-f1ae7ea0567c)
 
 **Question 10**
 ---
 In the Products table, insert a record where some fields are NULL, another record where all fields are filled without any NULL values, and a third record where some fields are filled, and others are left as NULL.
+
+![Screenshot 2025-04-30 220800](https://github.com/user-attachments/assets/21849162-5472-484a-9d75-1a974393f0bd)
 
 **Query:**
 
@@ -242,7 +253,11 @@ VALUES('108','Wireless Earbud','Accessorie',NULL,'100');
 
 **Output:**
 
-![Output10](output.png)
+![Screenshot 2025-04-30 220808](https://github.com/user-attachments/assets/1353d9e8-f088-46dc-b2fb-507e20177f1a)
+
+## Module 1 Home Challenge - Grade
+
+![Screenshot 2025-05-01 131556](https://github.com/user-attachments/assets/c19dc65d-2028-4171-b900-1c77cbdfe275)
 
 
 ## RESULT
