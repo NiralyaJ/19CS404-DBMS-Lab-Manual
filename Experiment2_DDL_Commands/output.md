@@ -146,6 +146,8 @@ Create a new table named item with the following specifications and constraints:
 6.The foreign key should cascade updates and deletes.
 7.item_desc and rate should not accept NULL.
 
+![Screenshot 2025-04-30 220641](https://github.com/user-attachments/assets/a9a89e50-ac9f-48f6-9ea9-0a2f802939e0)
+
 **Query:**
 
 ```sql
