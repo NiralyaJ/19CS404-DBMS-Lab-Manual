@@ -29,7 +29,7 @@ END;
 
 ## 1. Write a PL/SQL program to find the Greatest of Two Numbers
 ## Program:
-
+```
 DECLARE
    num1 NUMBER := 45;
    num2 NUMBER := 80;
@@ -40,7 +40,7 @@ BEGIN
       DBMS_OUTPUT.PUT_LINE('Greater number is: ' || num2);
    END IF;
 END;
-
+```
 ## 2. Write a PL/SQL program to Calculate Sum of First N Natural Numbers
 
 ## Program:
