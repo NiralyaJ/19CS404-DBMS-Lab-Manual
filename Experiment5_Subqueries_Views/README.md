@@ -287,6 +287,10 @@ WHERE LENGTH(department_name) > (
 
 ![Screenshot 2025-05-09 092228](https://github.com/user-attachments/assets/7f0a4460-10b7-4098-b8a5-19c59d9632d7)
 
+## Module 5 - Home Challenge
+
+![Screenshot 2025-05-09 153912](https://github.com/user-attachments/assets/3e97a888-6454-4806-93c6-cdbfeb586162)
+
 
 ## RESULT
 Thus, the SQL queries to implement subqueries and views have been executed successfully.
