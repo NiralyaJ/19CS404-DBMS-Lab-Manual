@@ -2,6 +2,10 @@
 --
 Write the SQL query that achieves the selection of all columns from the "nurses" table (aliased as "n") and the "department_name" column from the "departments" table, with an inner join on the "department_id" column.
 
+![Screenshot 2025-05-09 104401](https://github.com/user-attachments/assets/fc88a51e-176d-4134-9923-d8eae5bad99f)
+
+**Query:**
+
 ```sql
 
 SELECT nurses.*, departments.department_name
@@ -13,11 +17,16 @@ ON nurses.department_id = departments.department_id;
 
 **Output:**
 
-![Output1](output.png)
+![Screenshot 2025-05-09 104459](https://github.com/user-attachments/assets/9f253537-93af-4e5c-a2e7-93e2ba93e15e)
+
 
 **Question 2**
 ---
 Write the SQL query that achieves the selection of the "name" column from the "salesman" table (aliased as "s"), the "cust_name," "city," "grade," and "salesman_id" columns from the "customer" table (aliased as "c"), with a left join on the "salesman_id" column and a condition filtering for customers with a grade less than or equal to 100.
+
+![Screenshot 2025-05-09 104733](https://github.com/user-attachments/assets/86b0357a-966d-4f4b-9e31-bf1d4b55843b)
+
+**Query:**
 
 ```sql
 SELECT 
@@ -39,11 +48,16 @@ WHERE
 
 **Output:**
 
-![Output2](output.png)
+![Screenshot 2025-05-09 105020](https://github.com/user-attachments/assets/20bd12da-c917-4cc5-b890-6b60d761bee6)
+
 
 **Question 3**
 ---
 From the following tables write a SQL query to find those customers with a grade less than 300. Return cust_name, customer city, grade, Salesman, salesmancity. The result should be ordered by ascending customer_id. 
+
+![Screenshot 2025-05-09 105053](https://github.com/user-attachments/assets/581a6f0b-9614-4ec3-b3a5-e9a1e7f95ecb)
+
+**Query:**
 
 ```sql
 SELECT 
@@ -67,11 +81,16 @@ ORDER BY
 
 **Output:**
 
-![Output3](output.png)
+![Screenshot 2025-05-09 105110](https://github.com/user-attachments/assets/edcf532a-5532-409a-b5bd-0a6e1a6e1613)
+
 
 **Question 4**
 ---
 Write the SQL query that achieves the selection of all columns from the "customer" table (aliased as "c"), with a left join on the "customer_id" column and a condition filtering for orders with an order date between '2012-07-01' and '2012-07-30'.
+
+![Screenshot 2025-05-09 105129](https://github.com/user-attachments/assets/fa9b6396-89bf-4111-b5f1-564e16c88733)
+
+**Query:**
 
 ```sql
 SELECT 
@@ -89,11 +108,16 @@ WHERE
 
 **Output:**
 
-![Output4](output.png)
+![Screenshot 2025-05-09 105149](https://github.com/user-attachments/assets/dcec4f94-0360-4890-931f-a0da335b8e35)
+
 
 **Question 5**
 ---
 Write the SQL query that achieves the selection of all columns from the "test_results" table (aliased as "t"), with an inner join on the "patient_id" column and a condition filtering for patients with the first name 'Alice'.
+
+![Screenshot 2025-05-09 105208](https://github.com/user-attachments/assets/fa5f0790-f0b1-4646-a688-7505fcc41762)
+
+**Query:**
 
 ```sql
 
@@ -112,11 +136,16 @@ WHERE
 
 **Output:**
 
-![Output5](output.png)
+![Screenshot 2025-05-09 105224](https://github.com/user-attachments/assets/37feb3f3-e32f-4038-ac47-8a739b1b67e5)
+
 
 **Question 6**
 ---
 From the following tables write a SQL query to locate those salespeople who do not live in the same city where their customers live and have received a commission of more than 12% from the company. Return Customer Name, customer city, Salesman, salesman city, commission.  
+
+![Screenshot 2025-05-09 105246](https://github.com/user-attachments/assets/3c4b91c2-5d36-4516-806a-d39ac96c14de)
+
+**Query:**
 
 ```sql
 
@@ -141,11 +170,16 @@ WHERE
 
 **Output:**
 
-![Output6](output.png)
+![Screenshot 2025-05-09 105308](https://github.com/user-attachments/assets/e0a54108-de53-43f3-8987-52ea31d23f46)
+
 
 **Question 7**
 ---
 Write a SQL statement to join the tables salesman, customer and orders so that the same column of each table appears once and only the relational rows are returned. 
+
+![Screenshot 2025-05-09 105430](https://github.com/user-attachments/assets/b865d66a-2b37-4d41-a7bb-4fa6b3f32ada)
+
+**Query:**
 
 ```sql
 SELECT 
@@ -169,11 +203,16 @@ JOIN
 
 **Output:**
 
-![Output7](output.png)
+![Screenshot 2025-05-09 105502](https://github.com/user-attachments/assets/a934c792-d31d-4f2b-a4ee-9b0259fdbb52)
+
 
 **Question 8**
 ---
 Write the SQL query that achieves the selection of all columns from the "patients" table and the specialization from the "doctors" table (aliased as "doctor_specialization"), with an inner join on the "doctor_id" column.
+
+![Screenshot 2025-05-09 105524](https://github.com/user-attachments/assets/7981f2d2-ec3f-4bcb-a5f7-115043af3136)
+
+**Query:**
 
 ```sql
 
@@ -197,11 +236,16 @@ ON
 
 **Output:**
 
-![Output8](output.png)
+![Screenshot 2025-05-09 105550](https://github.com/user-attachments/assets/ac6823a4-db34-4e71-a95b-125f0edeede1)
+
 
 **Question 9**
 ---
  From the following tables write a SQL query to find the salesperson(s) and the customer(s) he represents. Return Customer Name, city, Salesman, commission.
+
+![Screenshot 2025-05-09 105615](https://github.com/user-attachments/assets/06eec569-3189-4113-a20c-acafa571c17d)
+
+**Query:**
 
 ```sql
 
@@ -221,11 +265,16 @@ ON
 
 **Output:**
 
-![Output9](output.png)
+![Screenshot 2025-05-09 105634](https://github.com/user-attachments/assets/8d25935d-e611-431a-ab0f-cebcecd409b3)
+
 
 **Question 10**
 ---
 From the following tables write a SQL query to find those orders where the order amount exists between 500 and 2000. Return ord_no, purch_amt, cust_name, city.
+
+![Screenshot 2025-05-09 105654](https://github.com/user-attachments/assets/0a330f8a-4390-473d-ba6e-aa031605b2a1)
+
+**Query:**
 
 ```sql
 
@@ -247,4 +296,5 @@ WHERE
 
 **Output:**
 
-![Output10](output.png)
+![Screenshot 2025-05-09 105711](https://github.com/user-attachments/assets/57cad913-ecee-428b-8ee0-79890f9d12d5)
+
