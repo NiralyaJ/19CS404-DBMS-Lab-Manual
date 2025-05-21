@@ -207,7 +207,8 @@ END;
 ```
 
 **Output:**  
-The program should display employee names with their department numbers or the appropriate error message if no data is found.
+
+![Screenshot 2025-05-19 113209](https://github.com/user-attachments/assets/2f2f422a-4509-4264-9184-41f65a695959)
 
 
 ---
@@ -264,7 +265,8 @@ EXCEPTION
 END;
 ```
 **Output:**  
-The program should display employee records or the appropriate error message if no data is found.
+
+![Screenshot 2025-05-19 114122](https://github.com/user-attachments/assets/6f548973-1853-49c2-bded-3d3e0839f973)
 
 ---
 
@@ -316,7 +318,9 @@ EXCEPTION
 END;
 ```
 **Output:**  
-The program should update employee salaries and display a message, or it should display an error message if no data is found.
+
+![Screenshot 2025-05-19 114404](https://github.com/user-attachments/assets/37f0e87e-049e-46e0-a946-e447159c3fd8)
+
 
 ---
 
